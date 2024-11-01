@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>best wishes of deepawali.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wish">
+      <img id="wing" src="wing.png" alt="" />
+      <img id="diya" src="pngwing.com.png" />
+      <h1>have a wonderful celebration!</h1>
+    </div>
+
+    <video id="vid" src="deep.mp4" loop muted autoplay="true"></video>
+    <div id="ui">
+      <div id="page1">
+        <h1>Happy Diwali!</h1>
+        <p id="message"></p>
+        <!-- <h2> May your life get filled with colors</h2> -->
+        <p id="cont">May your life be as colorful and vibrant as diwali decorations! Wishing you a joyous and memeroable celebration.</p>
+        <div id="by">
+           <p id="n1">~from ,<br></p>
+           <p id="n2"><b>Akshay Sharma</b></p>
+        </div>
+    </div>
+    
+    <script>
+      const message = localStorage.getItem("userMessage");
+
+      // Display the message in the paragraph
+      document.getElementById("message").textContent = message
+      ? message:"No message found.";
+    </script>
+  </body>
+</html>
